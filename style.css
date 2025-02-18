@@ -123,8 +123,8 @@ li:hover {
 
 /* Checkbox */
 .task-checkbox {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     accent-color: #ff6b6b;
 }
