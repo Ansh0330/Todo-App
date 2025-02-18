@@ -21,4 +21,16 @@ A sleek and responsive TODO app built with HTML, CSS, and JavaScript. It allows 
 To run the app locally:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/Ansh0330/todo-app.git
+2 . Navigate to the project directory:
+  ``` cd todo-app ```
+3. Open ```index.html``` in your preferred web browser.
+
+ ## Usage
+- Open the app in a browser, and you can start adding tasks.
+- Link to App : https://ansh0330.github.io/Todo-App/
+- You can edit or delete tasks as needed.
+- Mark tasks as complete by checking the checkbox next to each task.
+  
+## License
+This project is open-source and available under the MIT License.
