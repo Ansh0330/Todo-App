@@ -26,7 +26,7 @@ body {
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 90%;
-    max-width: 400px;
+    max-width: 600px;
     text-align: center;
     overflow-x: hidden;
     overflow-y: auto;
@@ -105,13 +105,9 @@ li {
     margin: 8px 0;
     border-radius: 8px;
     transition: 0.3s ease-in-out;
-}
-
-/* Initially hide the tasks */
-li {
     opacity: 0;
     transform: translateY(10px); /* Start from below */
-    transition: opacity 1s ease, transform 0.3s ease; /* Smooth transition */
+    transition: opacity 1s ease, transform 0.5s ease; /* Smooth transition */
 }
 
 /* When the task is added, make it fade in and slide up */
@@ -156,6 +152,7 @@ button:hover {
 
 /* Edit Button */
 button:nth-child(3) {
+    padding: 8px 4%;
     background: #ffa502;
     color: white;
 }
@@ -166,7 +163,7 @@ button:nth-child(3):hover {
 
 /* Delete Button */
 button:nth-child(4) {
-    padding: 8px 20px;
+    padding: 8px 4%;
     background: #ff4757;
     color: white;
 }
@@ -179,5 +176,135 @@ button:nth-child(4):hover {
 @media (max-width: 480px) {
     .wrapper {
         width: 95%;
+    }
+}
+
+/*Media Queries */
+
+/* For devices with widths up to 480px (Small Mobile Devices) */
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .todo-container h1 {
+        font-size: 20px;
+    }
+
+    #todo-input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #add-btn {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    li {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* For devices with widths between 481px and 768px (Tablets and Larger Phones) */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .todo-container h1 {
+        font-size: 22px;
+    }
+
+    #todo-input {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    #add-btn {
+        padding: 12px 14px;
+        font-size: 15px;
+    }
+
+    li {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    button {
+        padding: 8px 14px;
+        font-size: 15px;
+    }
+}
+
+/* For devices with widths between 769px and 1024px (Laptops) */
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .todo-container h1 {
+        font-size: 24px;
+    }
+
+    #todo-input {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #add-btn {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    li {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+/* For devices larger than 1024px (Desktops and Larger Screens) */
+@media (min-width: 1025px) {
+    .wrapper {
+        padding: 20px;
+        max-width: 600px;
+    }
+
+    .todo-container h1 {
+        font-size: 24px;
+    }
+
+    #todo-input {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #add-btn {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    li {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 16px;
+        font-size: 16px;
     }
 }
