@@ -107,7 +107,7 @@ li {
     transition: 0.3s ease-in-out;
     opacity: 0;
     transform: translateY(10px); /* Start from below */
-    transition: opacity 1s ease, transform 0.5s ease; /* Smooth transition */
+    transition: opacity 0.8s ease, transform 0.5s ease; /* Smooth transition */
 }
 
 /* When the task is added, make it fade in and slide up */
@@ -170,6 +170,10 @@ button:nth-child(4) {
 
 button:nth-child(4):hover {
     background: #e84118;
+}
+
+.clearAll-btn{
+    width: 95%;
 }
 
 /* Responsive Design */

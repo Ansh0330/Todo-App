@@ -1,6 +1,7 @@
 let userInput = document.querySelector("#todo-input");
 const addTaskBtn = document.querySelector("#add-btn");
 const taskList = document.querySelector("#task-list");
+const todoContainer = document.querySelector(".todo-container");
 
 // Load tasks from local storage when the page loads
 window.onload = () => {
@@ -86,6 +87,7 @@ function addTask(task){
             taskList.removeChild(li);
             saveTasksToLocalStorage();
         })
+
         taskList.appendChild(li);
         // Save tasks to local storage after adding
         saveTasksToLocalStorage();
@@ -94,7 +96,6 @@ function addTask(task){
         setTimeout(() => {
             li.classList.add('show');
         }, 50);
-
         userInput.value = "";
     }
 }
@@ -177,5 +178,25 @@ function loadTasks() {
     }
 }
 
+const clearAll = document.createElement("button");
+    clearAll.innerText = `Clear All Tasks`;
+    todoContainer.appendChild(clearAll);
+    clearAll.style.width = "90%"
+    clearAll.style.marginTop = "10px"
+
+    clearAll.addEventListener("click", () => {
+        const tasks = document.querySelectorAll("#task-list li");
+    
+        tasks.forEach((task, index) => {
+            setTimeout(() => {
+                task.style.opacity = "0";  // Fade out effect
+                task.style.transform = "translateY(-10px)"; // Slight lift effect
+            }, index * 100); // Stagger the effect for better animation
+        });
+    
+        setTimeout(() => {
+            taskList.innerHTML = ""; // Clear the tasks after animation completes
+        }, tasks.length * 100 + 500);
+    });
 
 
