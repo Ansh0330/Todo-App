@@ -8,7 +8,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Background */
 body {
     display: flex;
     justify-content: center;
@@ -18,7 +17,6 @@ body {
     color: white;
 }
 
-/* Wrapper for the TODO App */
 .wrapper {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -44,12 +42,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Space between input and button */
+    gap: 10px;
 }
 
 /* Adjust Input Field */
 #todo-input {
-    flex: 1; /* Takes full width */
+    flex: 1;
     width: 100%;
     padding: 12px;
     border-radius: 8px;
@@ -110,10 +108,10 @@ li {
     transition: opacity 0.8s ease, transform 0.5s ease; /* Smooth transition */
 }
 
-/* When the task is added, make it fade in and slide up */
+
 li.show {
     opacity: 1;
-    transform: translateY(0); /* Move to normal position */
+    transform: translateY(0);
 }
 
 
@@ -129,19 +127,16 @@ li:hover {
     accent-color: #ff6b6b;
 }
 
-/* Strikethrough effect when task is completed */
 .completed {
     text-decoration: line-through;
-    opacity: 0.6; /* Reduce opacity for completed tasks */
+    opacity: 0.6;
 }
 
-
-/* Buttons (Edit & Delete) */
 button {
-    padding: 8px 14px; /* Increase padding for a bigger button */
-    font-size: 16px; /* Make text larger */
+    padding: 8px 14px;
+    font-size: 16px; 
     border: none;
-    border-radius: 5px; /* Rounded edges */
+    border-radius: 5px; 
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
