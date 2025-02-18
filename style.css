@@ -176,15 +176,7 @@ button:nth-child(4):hover {
     width: 95%;
 }
 
-/* Responsive Design */
-@media (max-width: 480px) {
-    .wrapper {
-        width: 95%;
-    }
-}
-
 /*Media Queries */
-
 /* For devices with widths up to 480px (Small Mobile Devices) */
 @media (max-width: 480px) {
     .wrapper {
